@@ -14,5 +14,19 @@ int binary_search(int arr[], int left, int right, int key) {
 }
 
 int main() {
-
+    int n;
+printf("enter the no. of integers:\n");
+scanf("%d",&n);
+int arr[n];
+for(int i=0;i<n;i++)
+{
+    printf("enter the number at %d index\n",i);
+    scanf("%d",arr[i]);
+}
+int left=0;
+int right=n-1;
+int key;
+printf("enter the number to be searched:");
+scanf("%d",&key);
+binary_search(arr,left,right,key);
 }
